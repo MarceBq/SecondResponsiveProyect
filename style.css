@@ -1,0 +1,149 @@
+html{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: inherit;
+}
+
+
+.first_section{
+    background-color: bisque;
+    width: 100%;
+}
+
+/* Aqui estoy en el section1 */
+
+.header_block{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+    justify-content: center;
+
+}
+
+.nav_block{
+    display: flex;
+    width: 95%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 105px;
+}
+
+.nav_left{
+    width: 500px;
+}
+
+.nav_right{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25em;
+}
+
+.button_nav_rigth{
+    background-color: blueviolet;
+    color: white;
+    width: 230px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.information_block{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.information_block_text{
+    width: 41.5%;
+    height: 500px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start; 
+    display: flex;
+}
+
+
+.information_block_image img{
+    width: 500px;
+}
+
+.top_text{
+    padding-bottom: 20px;
+}
+
+.title_top_text{
+    font-size: 3.5em;
+    padding-bottom: 20px;
+
+}
+
+.pagraph_top_text{
+    font-size: 1.3em;
+    color: rgb(55, 63, 63);
+}
+
+.mid_button{
+    padding-bottom: 20px;
+}
+
+
+.mid_button button{
+    background-color: blueviolet;
+    color: white;
+    width: 160px;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 0.9em; 
+}
+
+.bottom_text > p{
+    padding-top: 8px;
+    font-size: 1.2em; 
+}
+
+p > .purple_color_text{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+/* Aca estoy en el segundo blqoue */
+
+.second_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PRIMER DIV */
+
+.socialweb_information{
+    width: 86%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.socialweb_information_image img{
+    width: 400px;
+}
+
+
+/* SEGUNDO DIV */
+
+.phone_information_image img{
+    width: 400px;
+}
