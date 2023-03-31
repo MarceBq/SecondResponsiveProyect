@@ -4,28 +4,43 @@ html{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
+    /* overflow: hidden; */
+    
 }
 
 *{
     margin: 0px;
     border: 0px;
-    box-sizing: inherit;
+    box-sizing: border-box;
+}
+
+section,footer{
+    overflow: hidden;
+    white-space: wrap;
+    word-break: break-word;
 }
 
 
-.first_section{
-    background-color: bisque;
+body{
     width: 100%;
+    height: 100%;
+    /* background-color: rgb(68, 0, 255); */ 
+}
+
+.first_section{
+    background: linear-gradient(to top left, rgb(228, 227, 227),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255), rgb(139, 74, 139));
+    width: 100%;
+    /* overflow: hidden; */
 }
 
 /* Aqui estoy en el section1 */
 
 .header_block{
     width: 100%;
-    height: 100%;
     padding-bottom: 40px;
     justify-content: center;
-
+    max-width: 100%;
 }
 
 .nav_block{
@@ -56,6 +71,11 @@ html{
     height: 60px;
     border-radius: 4px;
     font-size: 0.9em;
+     
+}
+
+.hamburger_menu{
+    display: none;
 }
 
 .information_block{
@@ -72,11 +92,14 @@ html{
     flex-direction: column;
     align-items: start; 
     display: flex;
+    padding-bottom: 50px;
+    max-width: 100%;
 }
 
 
 .information_block_image img{
     width: 500px;
+    max-width: 100%;
 }
 
 .top_text{
@@ -86,7 +109,7 @@ html{
 .title_top_text{
     font-size: 3.5em;
     padding-bottom: 20px;
-
+    max-width: 100%;
 }
 
 .pagraph_top_text{
@@ -126,24 +149,422 @@ p > .purple_color_text{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 60px;
+    width: 100%;
+    margin: 0px;
 }
 
 /* PRIMER DIV */
 
-.socialweb_information{
-    width: 86%;
+.socialweb_information_block{
+    width: 90%;
     display: flex;
     justify-content: space-around;
 }
 
+.socialweb_information_text_title{
+    width: 520px;
+    font-size: 2.3em;
+} 
+
+.socialweb_information_text_pagraph{
+     
+    width: 550px;
+    font-size: 1.25em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(94, 91, 91, 0.699);
+
+}
+
+.socialweb_information_text_linker{
+    font-size: 1.15em;
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+}
 
 .socialweb_information_image img{
+    width: 350px;
+}
+
+/* SEGUNDO DIV */
+
+.phone_information_block{
+    display: flex;   
+    width: 80%;        
+    justify-content: space-around;
+    align-items: center;    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+ 
+.phone_information_text_container{
+    width: 100%;
+    height: 50%;
+    padding-left: 60px;
+}
+
+.phone_information_text_title{
+    font-size: 2.3em;
+}
+
+.phone_information_text_pagraph{
+    font-size: 1.15em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(94, 91, 91, 0.699);
+
+}
+
+.phone_information_text_linker{
+    font-size: 1.15em;
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.phone_information_image img{
     width: 400px;
 }
 
 
-/* SEGUNDO DIV */
+/* Aqui estoy en el Footer */
 
-.phone_information_image img{
-    width: 400px;
+footer{
+    display: flex;
+    background-color:  rgb(241, 241, 241);
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+     
+}
+
+
+.footer_container{
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+ }
+ 
+.text{
+    font-size: 1.4em;
+    font-weight: bold;
+} 
+
+.footer_left{
+    width: 20%;
+    padding-bottom: 23px;
+}
+
+
+.indie_title{
+    padding-top: 26px;
+}
+
+
+.indie_text{
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+
+.indie_thanks{
+    font-weight: bold;
+}
+
+
+.footer_rigth{
+    display: flex;
+    width: 50%;
+    height: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first_list{
+    padding-bottom: 23px;
+}
+.footer_text_type{
+    color: rgba(94, 91, 91, 0.699);
+}
+
+.split{
+    padding-bottom: 7px;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 768px){
+    
+    .first_section{
+        width: 100%;
+        min-width: 55%; 
+    }
+
+
+    .header_block{
+        width: 100%;
+        min-width: 60%; 
+    }
+
+    .nav_block{
+        width: 98%;
+        justify-content: space-between;
+        padding-left: 25px;
+        min-width: 70%;
+    }
+
+    .nav_left{
+        width: 30%;
+        min-width: 20%;
+    }
+
+    .nav_right{
+        width: 60%;
+        justify-content: space-between;
+        min-width: 50%;
+    } 
+
+    .information_block{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .information_block_image{
+        padding-bottom: 10px;
+    }
+
+    .information_block_image img{
+        width: 350px;
+    }
+
+    .information_block_text{
+        width: 95%;
+    }
+
+
+    /* SEGUNDA SECCION */
+
+    .second_block{
+        width: 100%;
+        
+    }
+
+    /* PRIMER DIV */
+
+    .socialweb_information_block{
+        width: 90%;
+    }
+
+    .socialweb_information_text{
+        width: 67%;
+    }
+
+    .socialweb_information_text_title{
+        width: 420px;
+        font-size: 2.3em;
+         
+    }
+
+    .socialweb_information_text_pagraph{
+        width: 370px;
+        font-size: 1.2em;
+    }
+
+    .socialweb_information_image{
+        display: flex;
+        align-items: center;
+    }
+
+    .socialweb_information_image img{
+        width: 250PX;
+    }
+
+
+
+    /* SEGUNDO DIV */
+
+     
+
+    .phone_information_image{
+       width: 50%;
+    }
+
+    .phone_information_image img{
+       width: 250px; 
+    }
+    
+    .phone_information_text_container{
+        width:500px;
+        padding-left: 0px;
+    }
+
+    .phone_information_text_pagraph{
+        width: 400px;
+    }
+
+    /* FOOTER */
+
+    .footer_container{
+        display: flex;
+    }
+
+    .footer_left{
+        width: 400px;
+        height: 250px;
+        align-items: start;
+    }
+
+    .footer_rigth{
+        display: flex;
+        width: 250px;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 645px) {
+    
+    .nav_block{
+        width: 100%;
+    }
+
+    .nav_right{
+        display: none;
+        width: 300px;
+    }
+
+    .hamburger_menu{
+        max-width: 100px;
+        display: inline;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ACA ESTOY EN EL DIV DE LA SECTION 1 */
+
+     /* .second_block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+     } */
+
+    .socialweb_information_block{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .socialweb_information_image{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .socialweb_information_image img{
+        width: 95%;
+         
+    }
+
+
+    .socialweb_information_text{
+        display: flex; 
+        width: 100%;
+        justify-content: center;
+        padding-top: 30px;    
+    }
+
+    .socialweb_information_container_text{
+        max-width: 95%;
+        justify-content: center;
+    }
+
+
+    .socialweb_information_text_title{
+        max-width: 95%;
+        font-size: 2.25em;
+    }
+
+    .socialweb_information_text_pagraph{
+        max-width: 95%;
+        font-size: 1.2em;
+    } 
+
+    .phone_information_block{
+        width: 100%;
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .phone_information_image img{
+        width: 105%;
+    }
+
+
+    .phone_information_text{
+        display: flex; 
+        width: 100%;
+        justify-content: center;
+        padding-top: 30px;  
+    }
+
+    .phone_information_text_container{
+        max-width: 95%;
+        justify-content: center;
+    }
+
+    .phone_information_text_title{
+        max-width: 95%;
+        font-size: 2.25em;
+    }
+
+    .phone_information_text_pagraph{
+        max-width: 95%;
+        font-size: 1.2em;
+    }
+
+
+    /* AQUI ESTOY EN EL FOOTER */
+    
+    .footer{
+        width: 100%;
+        height: 55%;
+    }
+
+    .footer_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer_left{
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    .footer_rigth{
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-between; 
+    }
+
+    .footer_rigth_divs{
+        width: 40%;
+        justify-content: space-between;
+    } 
 }
