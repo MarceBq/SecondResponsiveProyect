@@ -9,6 +9,7 @@ html{
     
 }
 
+
 *{
     margin: 0px;
     border: 0px;
@@ -27,6 +28,18 @@ body{
     height: 100%;
     /* background-color: rgb(68, 0, 255); */ 
 }
+
+/* DARLE EFECTO AL BUTTON*/
+
+.button_nav_rigth:hover{
+    background-color: rgb(98, 0, 255);
+}
+
+.button_mid:hover{
+    background-color: rgb(98, 0, 255);
+}
+
+
 
 .first_section{
     background: linear-gradient(to top left, rgb(228, 227, 227),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255), rgb(139, 74, 139));

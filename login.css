@@ -1,0 +1,179 @@
+html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    background: linear-gradient(to top left, rgb(161, 138, 158),rgb(255, 255, 255),rgb(161, 138, 158),rgb(255, 255, 255), rgb(161, 138, 158));
+}
+
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 80%;
+    height: 85%;
+     
+}
+
+
+#header{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+}
+
+.navegation_var{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back_homepage_space{
+    width: 20%;     
+    display: flex;
+    text-align: end;
+}
+
+.back_homepage_space img{
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.back_homepage_space p{
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+ 
+#login_space{
+    width: 100%;
+    height: 88%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.description_space{
+    width: 45%;
+    height: 95%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_description{
+    width: 85%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+
+/* Solo imagenes xd */
+.description_space img{
+    width: 40px;
+}
+ 
+
+
+.create_space{
+    width: 100%;
+    font-size: 2.6em;
+    padding-bottom: 15px;
+}
+
+.div_container_flex{
+    width: 100%;
+    display: flex;
+    padding-bottom: 25px; 
+    font-size: 1.3em;
+}
+
+ 
+.formulary_space{
+    width: 45%;
+    height: 95%;
+    display: flex;
+    background: white; 
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_formulary{
+    width: 90%;
+    height: 88%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+
+.size_box{
+    width: 100%;
+}
+
+.formulary_tittle{
+    font-size: 2em;
+}
+
+.style_text_flex{
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.style_text_flex input{
+    height: 50px;
+    font-size: 1em;
+    border: rgb(184, 182, 182) solid 2px;
+    border-radius: 7px;
+}
+ 
+/* Un espacioado a los labels */
+
+label{
+    padding-bottom: 10px;
+}
+
+/* Agregarle una animacion al botton */
+
+ 
+
+.checkbox_box{
+    font-size: 1.3em;
+    display: flex;
+   
+}
+
+.checkbox_box input{
+    width: 30px;
+}
+
+.checkbox_box p{
+    padding-left: 10px;
+}
+
+.button_box button{
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    background-color: blueviolet;
+    color: white;
+    border:  none;
+    border-radius: 5px;
+}
+ 
+button:hover{
+    background-color: rgb(43, 55, 226);
+}
