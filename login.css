@@ -15,6 +15,7 @@ html{
     box-sizing: border-box;
 }
 
+ 
 
 body{
     width: 80%;
@@ -28,6 +29,10 @@ body{
     height: 12%;
     display: flex;
     justify-content: center;
+}
+
+.icon_phone{
+    display: none;
 }
 
 .navegation_var{
@@ -101,7 +106,7 @@ body{
 }
 
  
-.formulary_space{
+#formulary_space{
     width: 45%;
     height: 95%;
     display: flex;
@@ -176,4 +181,136 @@ label{
  
 button:hover{
     background-color: rgb(43, 55, 226);
+}
+
+@media screen and (max-width: 768px){
+
+    /* html{
+         
+    } */
+
+    body{
+        width: 95%;
+        height: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header{
+        width: 100%;
+        height: 7%;
+    }
+    .navegation_var{
+        width: 95%;
+         
+    }
+
+    .indie_icon img{
+        width: 100%;
+    }
+
+    .back_homepage_space{
+        width: 32%;     
+        display: flex;
+        text-align: end;
+         
+    } 
+
+    #login_space{
+        width: 100%;
+         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description_space{
+        width: 95%;
+        height: 60%; 
+        display: flex;
+         
+    }
+
+    .container_description{
+        width: 95%;
+        height: 95%; 
+        font-size: 0.95em;
+    }
+
+    .container_description h1{
+        font-size: 2.4em;
+    }
+
+    #formulary_space{
+        width: 95%;
+        height: 97%; 
+    }
+
+    .container_formulary{
+        width: 85%;
+        height: 87%;
+    }
+
+    .formulary_tittle{
+        font-size: 1.7em;
+    }
+    
+    .style_text_flex{
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .style_text_flex input{
+        height: 40px;
+        font-size: 1em;
+        border: rgb(184, 182, 182) solid 2px;
+        border-radius: 7px;
+    }
+     
+    /* Un espacioado a los labels */
+    
+    label{
+        padding-bottom: 10px;
+    }
+
+    .checkbox_box{
+        font-size: 1.20em;
+        display: flex;
+       
+    }
+    
+    .checkbox_box input{
+        width: 20px;
+    }
+
+}
+
+@media screen and (max-width: 481px){
+    
+ 
+    html{
+        height: 140%;
+    }
+
+    .back_homepage_space{
+        display: none;
+    }
+
+    .indie_icon{
+        width: 40%;
+    }
+
+    .icon_phone{
+        display: inline;
+        width: 10%;
+    }
+
+    .icon_phone img{
+        width: 100%;
+        display: inline;
+    }
 }
