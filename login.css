@@ -296,6 +296,10 @@ button:hover{
         height: 140%;
     }
 
+    #header{
+        width: 100%;
+    }
+
     .back_homepage_space{
         display: none;
     }
